@@ -26,3 +26,18 @@ makeCacheMatrix <- function( Matrix = matrix() ){ # matrix M
          )
 }
 
+
+cacheSolve <- function(cMatrix){
+
+    inv <- cMatrix$getInvMatrix() #query the inverse matrix
+
+    if(!is.null(inv)){ #if there is a cache and return it -- no computation needed
+       
+        return(inv)
+    }
+
+    mat <- cMatrix$getMatrix() # no cache found -- calculate the inverse matrix
+    inv <- solve( mat ) # the actual solution
+    cMatrix$setInvMatrix(inv) #save the result back to cMatrix's cache
+    inv
+}
