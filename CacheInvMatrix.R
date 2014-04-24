@@ -1,6 +1,6 @@
 # R prog / Peer Assignment: Caching the Inverse of a Matrix
 # Zinonas Zinonos
-# zenon@cern.ch
+# zenon@cern.ch; zinon123@gmail.com
 # 24 April 2014
 
 # code based on the example (cache mean vector)
