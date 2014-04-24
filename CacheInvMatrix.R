@@ -16,6 +16,8 @@ makeCacheMatrix <- function( Matrix = matrix() ){ # matrix M
 
     getInvMatrix <- function() invMatrix # get M^-1
 
+    getIdentMatrix <- function() Matrix %*% invMatrix # cross-check: get M.M^-1 = I -- identity matrix
+    
     list(setMatrix = setMatrix, #return functions wrapped in a list
          getMatrix = getMatrix,
          setInvMatrix = setInvMatrix,
