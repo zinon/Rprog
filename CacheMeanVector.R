@@ -1,3 +1,4 @@
+#Peer Assessments /Programming Assignment 2 : example
 
 makeVector <- function(x = numeric()) {
     m <- NULL
