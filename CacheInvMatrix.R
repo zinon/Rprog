@@ -1,4 +1,10 @@
+# R prog / Peer Assignment: Caching the Inverse of a Matrix
+# Zinonas Zinonos
+# zenon@cern.ch
+# 24 April 2014
 
+# code based on the example (cache mean vector)
+# please, read the README file :)
 
 makeCacheMatrix <- function( Matrix = matrix() ){ # matrix M
 
