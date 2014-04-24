@@ -6,7 +6,8 @@ R programming
 * Caching the Inverse of a Matrix
 
 * Usage:
-'''
+
+'''R
 # load program
 source("CacheInvMatrix.R")
 
