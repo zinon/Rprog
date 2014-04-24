@@ -1,6 +1,5 @@
 makeCacheMatrix <- function( Matrix = matrix() ){ # matrix M
 
-    ifNA(Matrix)
 
     invMatrix <- NULL # empty cache
 
@@ -41,3 +40,4 @@ cacheSolve <- function(cMatrix){
     cMatrix$setInvMatrix(inv) #save the result back to cMatrix's cache
     inv
 }
+
