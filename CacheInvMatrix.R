@@ -32,7 +32,7 @@ cacheSolve <- function(cMatrix){
     inv <- cMatrix$getInvMatrix() #query the inverse matrix
 
     if(!is.null(inv)){ #if there is a cache and return it -- no computation needed
-       
+        message("getting solution from cached data")
         return(inv)
     }
 
