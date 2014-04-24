@@ -1,5 +1,6 @@
 makeCacheMatrix <- function( Matrix = matrix() ){ # matrix M
 
+    ifNA(Matrix)
 
     invMatrix <- NULL # empty cache
 
@@ -41,3 +42,9 @@ cacheSolve <- function(cMatrix){
     inv
 }
 
+ifNA <- function(M = matrix()){
+    
+    if( any( is.na(M)) ) #check if M has NAs -- give a warning
+        cat( sprintf("Warning: matrix has %i NA(s)\n", sum( is.na(M) )))
+    
+}
