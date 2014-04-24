@@ -6,6 +6,7 @@ R programming
 * Caching the Inverse of a Matrix
 
 * Usage:
+'''
 # load program
 source("CacheInvMatrix.R")
 
@@ -21,3 +22,4 @@ cm$getIdentMatrix()
  
 # to avoid the intermediate step, call
 cacheSetSolveMatrix(m)
+'''
