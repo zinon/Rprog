@@ -7,9 +7,7 @@ R programming
 
 * Usage:
 
-
-load program
-> source("CacheInvMatrix.R")
+> source("CacheInvMatrix.R") #load program
 
 ```
 # create matrix
