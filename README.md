@@ -7,10 +7,11 @@ R programming
 
 * Usage:
 
-'''R
-# load program
-source("CacheInvMatrix.R")
 
+load program
+> source("CacheInvMatrix.R")
+
+```
 # create matrix
 m = rbind(c(1, -0.25), c(-0.25, 1))
 
@@ -23,4 +24,4 @@ cm$getIdentMatrix()
  
 # to avoid the intermediate step, call
 cacheSetSolveMatrix(m)
-'''
+```
