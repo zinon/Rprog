@@ -6,7 +6,7 @@
 # code based on the example (cache mean vector)
 # please, read the README file :)
 
-makeCacheMatrix <- function( Matrix = matrix() ){ # matrix M
+makeCacheMatrix <- function( Matrix = matrix() ){ # in: matrix M, out: list of functions
 
     ifNA(Matrix)
 
@@ -34,8 +34,7 @@ makeCacheMatrix <- function( Matrix = matrix() ){ # matrix M
          )
 }
 
-
-cacheSolve <- function(cMatrix){
+cacheSolve <- function(cMatrix){ # in: cache matrix+list of functions, out: matrix inversed
 
     inv <- cMatrix$getInvMatrix() #query the inverse matrix
 
@@ -50,7 +49,7 @@ cacheSolve <- function(cMatrix){
     inv
 }
 
-ifNA <- function(M = matrix()){
+ifNA <- function(M = matrix()){ # in: matrix, out: inverse
     
     if( any( is.na(M)) ) #check if M has NAs -- give a warning
         cat( sprintf("Warning: matrix has %i NA(s)\n", sum( is.na(M) )))
