@@ -53,7 +53,8 @@ ifNA <- function(M = matrix()){ # in: matrix, out: inverse
     
     if( any( is.na(M)) ) #check if M has NAs -- give a warning
         cat( sprintf("Warning: matrix has %i NA(s)\n", sum( is.na(M) )))
-    
+
+    invisible(M)
 }
 
 cacheSetSolveMatrix <- function(mMatrix){ # find the inverse matrix just in one call
