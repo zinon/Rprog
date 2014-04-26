@@ -8,7 +8,7 @@
 
 makeCacheMatrix <- function( Matrix = matrix() ){ # in: matrix M, out: list of functions
 
-    ifNA(Matrix)
+    ifNA(Matrix) # checking for NA matrix elements
 
     invMatrix <- NULL # empty cache
 
